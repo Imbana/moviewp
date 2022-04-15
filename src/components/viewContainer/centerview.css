@@ -1,0 +1,81 @@
+.centerView {
+   flex-basis: 500px;
+   flex-grow: 99;
+   min-width: 55%;
+   margin: 20px 0px;
+   padding: 0px 30px;
+   max-width: 500px;
+}
+
+.centerViewDesc{
+    color: white;
+    margin-bottom: 40px;
+    
+}
+
+.centerViewSinapsis{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.centerViewSinapsis span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.centerViewScore{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.centerViewSubtitle{
+    color: white;
+    margin-bottom: 20px;
+}
+.centerViewScore  .scoreLabel{
+ 
+    color: black;
+    margin-right: 10px;
+    background-color: rgb(255, 208, 0);
+    padding: 5px 10px;
+}
+
+.player-wrapper {
+   position: relative;
+   padding-top: 46.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+    background-color: rgb(65, 65, 65);
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+
+.centerViewControls {
+   display: flex;
+   justify-content: center;
+   font-size: 1.1rem;
+   color: white;
+   font-weight: 700;
+   margin: 20px 0px;
+}
+
+.centerViewControls .controler{
+    background-color: rgb(77, 76, 76);
+    color: white;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    cursor: pointer;
+ 
+}
+
+.centerViewControls .controler:hover{
+    background-color: var(--main-first-color);
+ 
+}

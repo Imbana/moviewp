@@ -1,0 +1,31 @@
+.searchGen{
+    width: 100%;
+    background-color: rgb(46, 45, 46);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 0px;
+}
+
+
+.searchGen > h4 {
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+.searchGenContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.searchGenItem{
+    padding: 10px 20px;
+    background-color: rgb(126, 123, 126);
+    margin: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.searchGenItem:hover{
+    background-color: rgb(83, 82, 83);
+}

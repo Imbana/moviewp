@@ -1,0 +1,82 @@
+.cardMovie {
+   position: relative;
+   width: 14rem;
+   overflow: hidden;
+   max-width: 50%;
+   padding: 10px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+.cardMovie > .cardTitle {
+   overflow: hidden;
+   color: var(--main-word-color);
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   padding: 5px 0px;
+   display: -webkit-box;
+   font-size: 1rem;
+   font-weight: 700;
+}
+.cardMovie h3 {
+   color: var(--main-word-color);
+}
+
+.cardMovieImg:hover {
+   box-shadow: 0 8px 16px 3px rgb(0 0 0 / 60%);
+   transform: translateY(-3px) scale(1.05) rotateX(15deg);
+   filter: brightness(90%);
+}
+.cardMovieImg {
+   overflow-y: hidden;
+   width: 100%;
+   padding-top: 140%;
+   position: relative;
+   overflow: hidden;
+   flex-shrink: 0;
+   margin-bottom: 5px;
+
+   transform-origin: center top;
+   transform-style: preserve-3d;
+   transform: translateZ(0);
+   transition: 0.3s;
+}
+
+
+
+.cardMovieImg .cardImg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+
+   /* filter: brightness(80%); */
+}
+
+
+.cardMovieImg .cardCategory{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    background-color: var(--main-first-color);
+    color: rgb(255, 255, 255);
+    z-index: 9999;
+    font-weight: 600;
+}
+
+.cardCategory.red{
+    background-color: rgb(178, 2, 194);
+}
+
+@media only screen and (max-width: 900px) {
+   .movieContainerCard {
+      flex: 1 0 auto;
+   }
+   .movieContent {
+      margin: 0;
+   }
+}

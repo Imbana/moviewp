@@ -1,0 +1,25 @@
+.sidebarright {
+   flex: 2;
+   color: rgb(70, 0, 0);
+   position: sticky;
+   top: 70px;
+   height: calc(100vh - 70px);
+   max-width: 330px;
+   overflow: auto;
+}
+
+.sidebarright::-webkit-scrollbar {
+   width: 8px;
+}
+.sidebarright::-webkit-scrollbar-track {
+   background: rgb(37, 36, 32);
+}
+
+.sidebarright::-webkit-scrollbar-thumb {
+   background-color: rgba(66, 21, 138, 0.671); /* color of the scroll thumb */
+   border-radius: 5px; /* roundness of the scroll thumb */
+}
+
+
+
+

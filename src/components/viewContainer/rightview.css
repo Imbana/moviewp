@@ -1,0 +1,49 @@
+.rightView{
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+.hoaa{
+    height: 40vh;
+    position: sticky;  
+    overflow: auto;
+
+}
+
+.topList h3 {
+   font-size: 1.3rem;
+   color: var(--main-word-color);
+}
+.topListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 302px;
+    overflow-y: hidden;
+}
+
+.topListContainer.seeMore{
+    height: auto;
+}
+
+
+.topList button {
+    background: var(--main-first-color);
+    padding: 12px 32px;
+    color: white;
+    display: block;
+    margin: 0px auto;
+    border: none;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.topList button:hover {
+    background-color: rgb(83, 28, 146);
+}

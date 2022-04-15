@@ -1,0 +1,96 @@
+.animesList {
+   color: var(--main-word-color);
+   margin-top: 30px;
+}
+
+.animesListTitle {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 1.2rem;
+}
+.animesListItem{
+    display: flex;
+    align-items: center;
+}
+.animesListItem h4{
+    margin-left: 10px;
+}
+
+.animesListTitle .link {
+   display: flex;
+   align-items: center;
+   padding: 10px 0px;
+   color: var(--main-first-color);
+   font-weight: 700;
+}
+.animesListTitle .link .icon {
+   transition: all 0.8s ease;
+}
+
+.animesListTitle .link:hover .icon {
+   transform: translateX(8px);
+   transition: all 0.5s ease;
+}
+
+.animesListContainer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+}
+
+.containerCard {
+   position: relative;
+   width: 23%;
+    overflow: hidden;
+    margin: 1%;
+   cursor: pointer;
+
+}
+
+.animesListCard {
+    overflow-y: hidden;
+   width: 100%;
+   padding-top: 140%;
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+   flex-shrink: 0;
+}
+
+.animesListCard .cardImg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+
+
+   border-radius: 10px;
+   filter: brightness(80%);
+}
+
+.animesListCard:hover .cardImg {
+   filter: brightness(50%);
+}
+
+
+
+
+.containerCard > .cardTitle{
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+@media only screen and (max-width: 900px) {
+   .containerCard {
+      flex: 1 0 10rem;
+   }
+}

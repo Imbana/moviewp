@@ -1,0 +1,115 @@
+.navbar {
+   color: white;
+   font-weight: 700;
+   width: 100vw;
+   position: fixed;
+   height: 70px;
+   top: 0;
+   z-index: 9999;
+   /* background: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.4) 50%); */
+   background-color: var(--main-bg-color);
+   transition: background 0.5s;
+}
+
+.navbar.scrolled {
+   background: rgb(37, 32, 39);
+   transition: background 4s;
+}
+.navbarContainer {
+   padding: 0 40px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 70px;
+background: transparent;
+}
+.navbarContainerLeft {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex: 1.8;
+   padding-right: 30px;
+   min-width: 200px;
+}
+
+
+.navbarContainerLeft .link {
+    display: contents;
+}
+
+.navbarContainerLeft .icon{
+    margin-right: 10px;
+    color: var(--main-first-color);
+    font-size: 2.5rem;
+}
+.navbarContainerLeft h2{
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s  ease;
+}
+.navbarContainerLeft h2:hover{
+    cursor: pointer;
+    color: var(--main-first-color);
+    transition: color 0.5s  ease;
+}
+
+.navbarContainerLeft span {
+    color: var(--main-first-color);
+   font-size: 2rem;
+}
+
+
+.navbarContainerCenter {
+   flex: 4.2;
+   display: flex;
+   margin: 0px 30px;
+   justify-content: flex-start;
+   padding-left: 30px;
+}
+
+.navbarContainerCenter .link {
+   margin: 0px 20px;
+   font-size: 1.1rem;
+   color: var(--main-word-color);
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: space-between;
+   transition: color 1.2s  ease;
+}
+
+.link.active{
+    color: var(--main-first-color);
+}
+
+.navbarContainerCenter .link:hover{
+    color: var(--main-first-color);
+    transition: color 0.8s  ease;
+}
+
+.navbarContainerCenter .link span {
+    margin-left: 5px;
+}
+
+
+
+.navbarContainerCenter .icon {
+    font-size: 1.3rem;
+} 
+
+.navbarContainerRight {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex: 2;
+   min-width: 200px;
+}
+
+.navbarContainerRight .icon {
+   margin-right: 30px;
+   cursor: pointer;
+}
+
+.redw{
+    color: red;
+}

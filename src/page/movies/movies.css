@@ -1,0 +1,19 @@
+
+.moviesContainer{
+    position: relative;
+    top: 70px;
+    display: flex;
+    padding: 0 40px;
+    margin: 0px auto;
+    max-width: 2464px;
+    background-color: var(--main-bg-color);
+    height: auto;
+}
+
+
+
+
+.homeChild{
+    background-color: red;
+}
+

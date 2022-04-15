@@ -1,0 +1,53 @@
+
+.cardTop{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.cardTop:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+    /* background-color: var(--main-bg-color); */
+}
+
+.cardTopLink{
+    width: 100%;
+}
+
+.cardTop .cardImg{
+    width: 70px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cardTop .cardInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardTop  h4 {
+    font-weight: 700;
+    color: var(--main-word-color);
+    font-size: 1.1rem;
+}
+
+.cardTop .cardEtiquetas {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--main-placeholder-color);
+  
+}
+
+.cardTop .cardEtiquetas  span{
+    margin-right: 5px;
+}
+
+.cardTop  .cardCalificacion {
+    color: white;
+}

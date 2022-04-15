@@ -1,0 +1,40 @@
+.cardcap{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0px;
+}
+
+.cardcap .cardImg{
+    width: 70px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cardcap .cardInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardcap  h4 {
+    font-weight: 700;
+    color: var(--main-word-color);
+    font-size: 1.1rem;
+}
+
+.cardcap .cardEtiquetas {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--main-placeholder-color);
+  
+}
+
+.cardcap .cardEtiquetas  span{
+    margin-right: 5px;
+}
+
+.cardcap  .cardCalificacion {
+    color: white;
+}

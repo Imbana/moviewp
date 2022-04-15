@@ -1,0 +1,13 @@
+.movieContent {
+   flex: 6.2;
+   margin: 20px;
+   margin-left: 40px;
+
+}
+
+.movieContentFlex {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+

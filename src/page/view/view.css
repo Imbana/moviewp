@@ -1,0 +1,11 @@
+.view{
+    position: relative;
+    top: 70px;
+    display: flex;
+    padding: 0 40px;
+    max-width: 2464px;
+    background-color: var(--main-bg-color);
+    height: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}

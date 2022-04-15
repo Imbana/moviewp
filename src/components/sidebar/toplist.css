@@ -1,0 +1,53 @@
+.topList {
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+
+
+.topList h3 {
+   font-size: 1.3rem;
+   color: var(--main-word-color);
+}
+.topListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 302px;
+    width: 100%;
+    overflow-y: hidden;
+   
+}
+
+.topListContainer.seeMore{
+    height: 200px;
+    animation-name: heightauto;
+    animation-duration: .8s;
+}
+
+
+@keyframes heightauto {
+    from {height: 302px;}
+    to {height: 620px;}
+}
+
+
+.topList button {
+    background: var(--main-first-color);
+    padding: 12px 32px;
+    color: white;
+    display: block;
+    margin: 0px auto;
+    border: none;
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.topList button:hover {
+    background-color: rgb(83, 28, 146);
+}
