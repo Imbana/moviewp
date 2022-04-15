@@ -4,7 +4,6 @@ import "./toplist.css";
 
 const TopList = ({ movieTop }) => {
    const [verMas, setVerMas] = useState(false);
-   console.log("contentttt",movieTop.content);
    return (
       <div className="topList">
          <h3>{movieTop.title}</h3>

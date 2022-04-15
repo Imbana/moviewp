@@ -91,6 +91,6 @@
 
 @media only screen and (max-width: 900px) {
    .containerCard {
-      flex: 1 0 10rem;
+      flex: 1 0 8rem;
    }
 }

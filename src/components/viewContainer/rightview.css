@@ -47,3 +47,11 @@
 .topList button:hover {
     background-color: rgb(83, 28, 146);
 }
+
+@media only screen and (max-width: 900px) {
+    .rightView{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ }

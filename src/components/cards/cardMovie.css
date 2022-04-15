@@ -42,8 +42,6 @@
    transition: 0.3s;
 }
 
-
-
 .cardMovieImg .cardImg {
    width: 100%;
    height: 100%;
@@ -55,28 +53,29 @@
    /* filter: brightness(80%); */
 }
 
-
-.cardMovieImg .cardCategory{
-    position: absolute;
-    bottom: 5px;
-    left: 5px;
-    padding: 4px 12px;
-    border-radius: 15px;
-    background-color: var(--main-first-color);
-    color: rgb(255, 255, 255);
-    z-index: 9999;
-    font-weight: 600;
+.cardMovieImg .cardCategory {
+   position: absolute;
+   bottom: 5px;
+   left: 5px;
+   padding: 4px 12px;
+   border-radius: 15px;
+   background-color: var(--main-first-color);
+   color: rgb(255, 255, 255);
+   z-index: 9999;
+   font-weight: 600;
 }
 
-.cardCategory.red{
-    background-color: rgb(178, 2, 194);
+.cardCategory.red {
+   background-color: rgb(178, 2, 194);
 }
 
 @media only screen and (max-width: 900px) {
-   .movieContainerCard {
-      flex: 1 0 auto;
-   }
    .movieContent {
       margin: 0;
+   }
+   .cardMovie {
+      flex: 1 0 7rem;
+      font-size: 0.75rem;
+      padding: 5px;
    }
 }
