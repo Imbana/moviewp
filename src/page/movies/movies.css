@@ -29,15 +29,16 @@
     }
     .moviesContainer .sidebarlef .containermaterial {
         margin: 0px;
+        margin-left: 10px;
         
     }
-    .moviesContainer .sidebarlef .containermaterial .css-1j9rugx-MuiAutocomplete-root {
-        margin: 4px;
-    }
-    .css-1j9rugx-MuiAutocomplete-root .MuiOutlinedInput-root{
-        padding: 4px !important;
+    .moviesContainer .sidebarlef .containermaterial .MuiAutocomplete-root{
+        margin: 4px; 
     }
 
+    .containermaterial .MuiOutlinedInput-root{
+        padding: 4px !important;
+    }
     .moviesContainer .sidebarlef  .searchLabel{
         padding: 8px 18px;
         margin: 15px 5px 0px 5px;
