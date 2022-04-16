@@ -34,14 +34,8 @@
     .moviesContainer .sidebarlef .containermaterial .css-1j9rugx-MuiAutocomplete-root {
         margin: 4px;
     }
-
-    .moviesContainer .sidebarlef  .css-1j9rugx-MuiAutocomplete-root .css-1urw8bq .MuiOutlinedInput-root{
-        padding: 0px;
-    }
-    .moviesContainer .sidebarlef  .css-9425fu-MuiOutlinedInput-notchedOutline{
-        bottom: -5px;
-        top: -2px;
-
+    .css-1j9rugx-MuiAutocomplete-root .MuiOutlinedInput-root{
+        padding: 4px !important;
     }
 
     .moviesContainer .sidebarlef  .searchLabel{
