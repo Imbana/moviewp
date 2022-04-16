@@ -5,10 +5,13 @@ import {
 } from "@mui/icons-material";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Navbar = () => {
    const [isScrolled, setIsScrolled] = useState(false);
-
+    const [valueMenu, setValueMenu] = useState(false)
+    console.log(valueMenu);
    window.onscroll = () => {
       setIsScrolled(window.pageYOffset === 0 ? false : true);
       return () => (window.onscroll = null);
@@ -25,7 +28,9 @@ const Navbar = () => {
                   </h2>
                </NavLink>
             </div>
-            <div className="navbarContainerCenter">
+ 
+            <div  className={ valueMenu? "navbarContainerCenter active" : "navbarContainerCenter "} >
+
                <NavLink
                   to="/"
                   className={({ isActive }) =>
@@ -44,49 +49,22 @@ const Navbar = () => {
                   <LocalMovies className="icon" />
                   <span>All</span>
                </NavLink>
-               {/* <NavLink
-                  to="/animes?type=animes"
-                  className={({ isActive }) =>
-                     isActive ? "link active" : "link"
-                  }
-               >
-                  <LocalMovies className="icon" />
-                  <span>Anime</span>
-               </NavLink>
                <NavLink
-                  to="/peliculas?type=peliculas"
+                  to="/capitulos"
                   className={({ isActive }) =>
                      isActive ? "link active" : "link"
                   }
                >
                   <LocalMovies className="icon" />
-                  <span>Peliculas</span>
+                  <span>Capitulos</span>
                </NavLink>
-               <NavLink
-                  to="/ovas?type=ovas"
-                  className={({ isActive }) =>
-                     isActive ? "link active" : "link"
-                  }
-               >
-                  <LocalMovies className="icon" />
-                  <span>Ovas</span>
-               </NavLink> */}
-               {/* <NavLink
-                  to="/view"
-                  className={({ isActive }) =>
-                     isActive ? "link active" : "link"
-                  }
-               >
-                  <LocalMovies className="icon" />
-                  <span>View</span>
-               </NavLink> */}
+            
             </div>
-            <div className="navbarContainerRight">
-               {/* <Search className="icon" />
-               <Notifications className="icon" />
-               <div className="profile">
-                  <KeyboardArrowDown className="icon" />
-               </div> */}
+            <div className="navbarMenu" onClick={()=>setValueMenu(!valueMenu)}>
+              { valueMenu ?
+                <CloseIcon className="icon"/> :
+               <MenuIcon  className="icon"/> 
+               }
             </div>
          </div>
       </div>
