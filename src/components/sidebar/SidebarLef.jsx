@@ -58,7 +58,7 @@ const SidebarLef = () => {
 
    return (
       <div className="sidebarlef">
-         <div className="containermaterial">
+         <div className="containermaterial movil">
             <Autocomplete
                color="primary"
                onChange={(event, newValue) => {

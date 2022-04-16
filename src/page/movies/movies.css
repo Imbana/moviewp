@@ -20,6 +20,7 @@
         padding: 0px;
         flex-direction: column;
     }
+
     .moviesContainer .sidebarlef {
         margin-bottom: 20px;
         position: relative;
@@ -31,8 +32,25 @@
         
     }
     .moviesContainer .sidebarlef .containermaterial .css-1j9rugx-MuiAutocomplete-root {
-        margin-right: 5px;
-        margin-bottom: 20px;
+        margin: 5px;
+    }
+
+    .moviesContainer .sidebarlef  .css-1j9rugx-MuiAutocomplete-root .MuiOutlinedInput-root{
+        padding: 0px;
+    }
+    .moviesContainer .sidebarlef  .css-9425fu-MuiOutlinedInput-notchedOutline{
+        bottom: -5px;
+        top: -2px;
+
+    }
+
+    .moviesContainer .sidebarlef  .searchLabel{
+        padding: 8px 18px;
+        margin: 15px 5px 0px 5px;
+    }
+
+    .moviesContainer .sidebarlef  .containermaterial.movil{
+        display: none;
     }
  }
  
