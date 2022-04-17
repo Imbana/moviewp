@@ -9,6 +9,7 @@
 }
 
 .sidebarright::-webkit-scrollbar {
+    display: none;
    width: 8px;
 }
 .sidebarright::-webkit-scrollbar-track {
@@ -21,5 +22,6 @@
 }
 
 
-
-
+.sidebarright:hover::-webkit-scrollbar  {
+    display: inline-block;
+}

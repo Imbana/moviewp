@@ -1,6 +1,9 @@
 .animesList {
    color: var(--main-word-color);
    margin-top: 30px;
+   background-color: #2d333ac4;
+   padding: 15px;
+   border-radius: 15px;
 }
 
 .animesListTitle {
@@ -9,12 +12,12 @@
    align-items: center;
    font-size: 1.2rem;
 }
-.animesListItem{
-    display: flex;
-    align-items: center;
+.animesListItem {
+   display: flex;
+   align-items: center;
 }
-.animesListItem h4{
-    margin-left: 10px;
+.animesListItem h4 {
+   margin-left: 10px;
 }
 
 .animesListTitle .link {
@@ -43,20 +46,30 @@
 .containerCard {
    position: relative;
    width: 23%;
-    overflow: hidden;
-    margin: 1%;
+   overflow: hidden;
+   margin: 1%;
    cursor: pointer;
-
 }
 
 .animesListCard {
-    overflow-y: hidden;
+   overflow-y: hidden;
    width: 100%;
    padding-top: 140%;
    position: relative;
-   border-radius: 10px;
    overflow: hidden;
    flex-shrink: 0;
+   margin-bottom: 5px;
+
+   transform-origin: center top;
+   transform-style: preserve-3d;
+   transform: translateZ(0);
+   transition: 0.3s;
+}
+
+.animesListCard:hover {
+   box-shadow: 0 8px 16px 3px rgb(0 0 0 / 60%);
+   transform: translateY(-3px) scale(1.05) rotateX(15deg);
+   filter: brightness(90%);
 }
 
 .animesListCard .cardImg {
@@ -67,30 +80,48 @@
    top: 0px;
    left: 0px;
 
-
    border-radius: 10px;
-   filter: brightness(80%);
+
 }
+
+
+.animesListCard .cardCategory {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    padding: 4px 12px;
+    border-radius: 15px;
+    background-color: var(--main-first-color);
+    color: rgb(255, 255, 255);
+    z-index: 9999;
+    font-weight: 600;
+ }
+ 
+ .animesListCard.red {
+    background-color: rgb(178, 2, 194);
+ }
 
 .animesListCard:hover .cardImg {
    filter: brightness(50%);
 }
 
-
-
-
-.containerCard > .cardTitle{
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    display: -webkit-box;
-    font-size: 1rem;
-    font-weight: 700;
-    
+.containerCard > .cardTitle {
+   overflow: hidden;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2;
+   display: -webkit-box;
+   font-size: 1rem;
+   font-weight: 700;
 }
 
 @media only screen and (max-width: 900px) {
    .containerCard {
       flex: 1 0 8rem;
    }
+
+   .animesListCard .cardCategory {
+    padding: 2px 8px;
+    font-weight:500;
+    font-size: .9rem;
+ }
 }

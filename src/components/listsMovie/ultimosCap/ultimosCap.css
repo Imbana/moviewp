@@ -1,6 +1,9 @@
 .ultimosCap{
     color: var(--main-word-color);
     margin-top: 20px;
+    background-color: #2d333aab;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .ultimoCapTitle{
@@ -56,7 +59,7 @@
     position: absolute;
     border-radius: 10px;
     transition: transform .8s ease;
-    filter: brightness(80%);
+    filter: brightness(95%);
 }
 
 .ultimoCapCard:hover .cardImg{
@@ -76,6 +79,17 @@
     font-weight: 500;
     background-color: rgba(49, 47, 47, 0.452);
   
+}
+
+.ultimoCapCard .cardTitleCap{
+    position: absolute;
+    top: 10px;
+    background-color: #6606a782;
+    color: white;
+    font-size: .8rem;
+    border-radius: 10px;
+    padding: 2px 6px;
+
 }
 
 .ultimoCapCard .cardCapitulo{

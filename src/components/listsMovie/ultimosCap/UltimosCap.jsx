@@ -18,7 +18,7 @@ const UltimosCap = () => {
          <div className="ultimoCapTitle">
             <div className="animesListItem">
                <Movie />
-               <h4>Ultimos capitulos agregados</h4>
+               <h4>Últimos capitulos agregados</h4>
             </div>
             <Link className="link" to="/capitulos">
                ver mas <ChevronRightIcon className="icon" />
@@ -37,7 +37,7 @@ const UltimosCap = () => {
                         alt="imagen"
                      />
                      <h3 className="cardTitle">{capitulo.title}</h3>
-                     <span className="cardCapitulo"></span>
+                     <span  className="cardTitleCap">{`Cap ${capitulo.cap}`}</span>
                   </Link>
                </li>
             ))}

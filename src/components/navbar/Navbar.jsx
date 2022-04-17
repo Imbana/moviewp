@@ -47,7 +47,7 @@ const Navbar = () => {
                   }
                >
                   <LocalMovies className="icon" />
-                  <span>All</span>
+                  <span>Animes</span>
                </NavLink>
                <NavLink
                   to="/capitulos"

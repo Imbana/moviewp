@@ -1,6 +1,9 @@
 .topList {
     margin-bottom: 20px;
     max-width: 300px;
+    background-color: #2d333a;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 

@@ -5,41 +5,60 @@
    margin: 20px 0px;
    padding: 0px 30px;
    max-width: 500px;
+
+
 }
 
-.centerViewDesc{
-    color: white;
-    margin-bottom: 40px;
-    
+.centerViewDesc {
+   color: white;
+   margin-bottom: 40px;
+
+   background-color: #2d333aab;
+   padding: 20px;
+   border-radius: 15px;
+
 }
 
-.centerViewSinapsis{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: gray;
+.centerViewSinapsis {
+   margin-top: 20px;
+   margin-bottom: 30px;
+   color: gray;
 }
 
 .centerViewSinapsis span {
-    font-size: 1.2rem;
-    font-weight: 700;
+   font-size: 1.2rem;
+   font-weight: 700;
 }
 
-.centerViewScore{
-    margin-top: 20px;
-    font-weight: 700;
-    font-size: 1.1rem;
+.centerViewScore {
+   margin-top: 20px;
+   font-weight: 700;
+   font-size: 1.1rem;
+   display: flex;
+   align-items: center;
+
 }
 
-.centerViewSubtitle{
-    color: white;
-    margin-bottom: 20px;
+.centerViewScore .scoreNumber {
+    font-size: 1.6rem;
+ }
+
+
+.centerViewVideo{
+    background-color: #2d333aab;
+    padding: 20px;
+    border-radius: 15px;
 }
-.centerViewScore  .scoreLabel{
- 
-    color: black;
-    margin-right: 10px;
-    background-color: rgb(255, 208, 0);
-    padding: 5px 10px;
+
+.centerViewSubtitle {
+   color: white;
+   margin-bottom: 20px;
+}
+.centerViewScore .scoreLabel {
+   color: black;
+   margin-right: 10px;
+   background-color: rgb(255, 208, 0);
+   padding: 5px 10px;
 }
 
 .player-wrapper {
@@ -48,12 +67,11 @@
 }
 
 .react-player {
-    background-color: rgb(65, 65, 65);
+   background-color: rgb(65, 65, 65);
    position: absolute;
    top: 0;
    left: 0;
 }
-
 
 .centerViewControls {
    display: flex;
@@ -61,40 +79,44 @@
    font-size: 1.1rem;
    color: white;
    font-weight: 700;
-   margin: 20px 0px;
+   margin: 20px 0px 0px;
 }
 
-.centerViewControls .controler{
-    background-color: rgb(77, 76, 76);
-    color: white;
-    border: none;
-    padding: 8px 22px;
-    border-radius: 5px;
-    margin: 0px 10px;
-    cursor: pointer;
- 
+.centerViewControls .controler {
+   background-color: rgb(77, 76, 76);
+   color: white;
+   border: none;
+   padding: 8px 22px;
+   border-radius: 5px;
+   margin: 0px 10px;
+   cursor: pointer;
 }
 
-.centerViewControls .controler:hover{
-    background-color: var(--main-first-color);
- 
+.centerViewControls .controler:hover {
+   background-color: var(--main-first-color);
 }
-
 
 @media only screen and (max-width: 900px) {
-    .centerView{
-        padding: 0px;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .centerViewVideo{
-        width: 100%;
-    }
-    .player-wrapper{
-        padding-top: 78%;
-    }
-    .centerViewDesc{
-        padding: 0px 18px;
-    }
- }
+   .centerView {
+      padding: 0px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+   .centerViewVideo {
+      width: 100%;
+   }
+   .player-wrapper {
+      padding-top: 78%;
+   }
+   .centerViewDesc {
+      padding: 10px 18px;
+      margin: 20px 0px 0px;
+   }
+   .centerViewVideo{
+    background-color: #2d333aab;
+    padding: 20px 0px;
+    border-radius: 15px;
+}
+
+}
